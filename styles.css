@@ -20,6 +20,19 @@ header{
     justify-content: space-between;
 }
 
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+#navbar{
+    position: sticky;
+    background-color: white;
+    top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 #logo{
     height: 100%;
     width: 120px;
@@ -140,6 +153,71 @@ footer p{
     display: none;
 }
 
+.full-width{
+    width: 100%;
+}
+
+.services{
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+}
+
+.body-text{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px;
+}
+
+.green{
+    background-color: #278D73;
+}
+
+.white{
+    color: white;
+}
+
+.service-dropdown{
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.service-dropdown img{
+    width: 40px;
+    height: 100%;
+}
+
+.FAQs{
+    border: 1.5px solid black;
+    padding: 15px;
+    border-radius: 25px;
+    text-align: left;
+}
+
+#location{
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hours{
+    display: flex;
+    gap: 50px;
+}
+
+#hours div{
+    text-align: left;
+}
 @media screen and (min-width: 600px){
     #body-content{
         margin: 30px;
