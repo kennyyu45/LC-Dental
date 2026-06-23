@@ -29,8 +29,7 @@ h1{
     position: sticky;
     background-color: white;
     top: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px
 }
 
 #logo{
@@ -61,7 +60,7 @@ h1{
     border-left: 5px solid rgb(39, 141, 115);
 }
 
-#sidebar #closed-btn{
+#closed-btn{
     font-size: 20px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -127,6 +126,7 @@ main div h2{
     border-radius: 25px;
     padding: 30px;
     cursor: pointer;
+    text-align: center;
 }
 
 footer{
@@ -177,16 +177,29 @@ footer p{
     color: white;
 }
 
+button{
+    width: 90%;
+}
+
+.service-dropdown-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
 .service-dropdown{
     margin: 20px;
+    padding-top: 20px;
     border-radius: 10px;
     background-color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: normal;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .service-dropdown img{
@@ -200,6 +213,10 @@ footer p{
     border-radius: 25px;
     text-align: left;
 }
+.FAQs p{
+    padding-right: 5px;
+}
+
 
 #location{
     font-size: 16px;
@@ -215,9 +232,33 @@ footer p{
     gap: 50px;
 }
 
+.location-titles{
+    margin-top: 30px;
+}
+.location-info{
+    margin-bottom: 30px;
+    margin-top: 0;
+    
+}
+
+/* logic for opening dropdowns */
+.closed{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-top: 20px;
+}
+.open{
+    max-height: 500px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    margin-top: 20px;
+}
+
 #hours div{
     text-align: left;
 }
+
 @media screen and (min-width: 600px){
     #body-content{
         margin: 30px;

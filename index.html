@@ -8,8 +8,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <div id="body-content">
-        <header id="navbar">
+    <header id="navbar">
             <div>
                 <img src="images/LCD_logo.png" alt="LC Dental logo" id="logo">
                 <nav id="topbar">
@@ -23,8 +22,12 @@
             </div>
             <img src="images/LCD_burger.png" alt="dropdown" id="dropdown">
         </header>
+    <div id="body-content">
+        
         <nav id="sidebar">
-            <div id="closed-btn">X</div>
+            <div id="closed-btn">
+                <p>X</p>
+            </div>
             <div>
                 <a href="#home">Home</a>
                 <a href="#about">About Us</a>
@@ -57,92 +60,201 @@
         </main>
     </div>
     <img alt="outside of LC Dental" src="images/LCD_facade.png" class="full-width" id="about">
-    <p class="body-text">At LC Dental, we provide comprehensive dental care including Periodontics, Implants, and Orthodontics. As a referral-based practice, our patients come to us through recommendations from satisfied patients and trusted medical professionals. </br></br>
+    <p class="body-text">At LC Dental, we provide comprehensive dental care including <strong>Periodontics, Implants, and Orthodontics</strong>. As a referral-based practice, our patients come to us through recommendations from satisfied patients and trusted medical professionals. </br></br>
 
-    We never double-schedule appointments, so you'll always be seen on time and receive our full, undivided attention. Our eco-friendly facility features digital radiography that reduces x-ray exposure by 85%, a next-generation ultrasonic scaler, and 3D animation software to help you make confident, informed decisions about your care. </br></br>
+    We <strong>never double-schedule appointments</strong>, so you'll always be seen on time and receive our full, undivided attention. Our eco-friendly facility features digital radiography that <strong>reduces x-ray exposure by 85%</strong>, a next-generation ultrasonic scaler, and <strong>3D animation software</strong> to help you make confident, informed decisions about your care. </br></br>
 
     Oral cancer screenings are performed for every patient as part of their routine exam.</p>
 
     <div class="green services" id="services">
         <h1 class="white">Our Services</h1>
-        <div class="service-dropdown">
-            <img alt="tooth-brush" src="images/Preventive.png">
-            <p>Preventive Dentistry</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown">
-            <img alt="tooth shield" src="images/General.png">
-            <p>General Dentistry</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown">
-            <img alt="teeth" src="images/Gum.png">
-            <p>Gum Disease Treatment</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown">
-            <img alt="tooth decay" src="images/Endo.png">
-            <p>Endodontics</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown">
-            <img alt="shining tooth" src="images/Cosmetic.png">
-            <p>Cosmetics</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown">
-            <img alt="screw" src="images/Ortho.png">
-            <p>Implants</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown">
-            <img alt="braces" src="images/Ortho.png">
-            <p>Orthodontics</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
+        <button class="service-dropdown">
+            <div class="service-dropdown-top">
+                <img alt="tooth-brush" src="images/Preventive.png">
+                <p>Preventive Dentistry</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                <strong>What is it?</strong>
+                <p>Orthodontics is the branch of dentistry dedicated to correcting misaligned teeth and jaws, helping patients achieve a straighter, healthier smile. Beyond aesthetics, properly aligned teeth are easier to clean, reducing the risk of decay and gum disease over time. Whether you're a child, teenager, or adult, we offer a range of modern orthodontic solutions to suit your lifestyle and goals.</p>
+                <strong>What we do</strong>
+                <ul>
+                    <li>Braces</li>
+                    <li>Invisalign</li>
+                    <li>Clear Braces</li>
+                </ul>
+            </div>
+        </button>
+        <button class="service-dropdown">
+            <div class="service-dropdown-top">
+                <img alt="tooth shield" src="images/General.png">
+                <p>General Dentistry</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                <strong>What is it?</strong>
+                <p>General dentistry covers the essential treatments that keep your smile healthy, functional, and looking its best. From restoring damaged teeth to replacing missing ones, our general dentistry services are designed to address a wide range of everyday dental needs with comfort and precision.</p>
+                <strong>What we do</strong>
+                <ul>
+                    <li>White fillings</li>
+                    <li>Crowns</li>
+                    <li>Bridges</li>
+                    <li>Dentures</li>
+                    <li>Sensitive teeth treatment</li>
+                </ul>
+            </div>
+        </button>
+        <button class="service-dropdown">
+            <div class="service-dropdown-top">
+                <img alt="teeth" src="images/Gum.png">
+                <p>Gum Disease Treatment</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                <strong>What is it?</strong>
+                <p>Gum disease is one of the most common dental conditions, yet it often goes unnoticed until it becomes a more serious concern. Left untreated, it can lead to gum recession, bone loss, and even tooth loss. Our gum disease treatments are tailored to the stage and severity of your condition, helping to stop the progression and restore the health of your gums.</p>
+                <strong>What we do</strong>
+                <ul>
+                    <li>Deep Cleaning</li>
+                    <li>Milti-treatment options for gum disease</li>
+                    <li>Splint for mobile teeth</li>
+                </ul>
+            </div>
+        </button>
+        <button class="service-dropdown">
+            <div class="service-dropdown-top">
+                <img alt="tooth decay" src="images/Endo.png">
+                <p>Endodontics</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                <strong>What is it?</strong>
+                <p>Endodontics is the branch of dentistry focused on the health of the inner tooth — specifically the pulp and root canals. When decay, infection, or injury reaches deep inside a tooth, endodontic treatment can save it from extraction and relieve the pain that comes with it. Our goal is to preserve your natural tooth wherever possible, keeping your smile intact and healthy.</p>
+                <strong>What we do</strong>
+                <ul>
+                    <li>Root Canal Treatment</li>
+                </ul>
+            </div>
+        </button>
+        <button class="service-dropdown">
+            <div class="service-dropdown-top">
+                <img alt="shining tooth" src="images/Cosmetic.png">
+                <p>Cosmetics</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                <strong>What is it?</strong>
+                <p>Cosmetic dentistry is all about helping you feel confident in your smile. Whether you're looking to brighten, straighten, or completely transform your teeth, our cosmetic treatments are designed to enhance the appearance of your smile in a way that looks natural and suits your individual needs. A great smile can make a lasting impression — and we're here to help you achieve it.</p>
+                <strong>What we do</strong>
+                <ul>
+                    <li>Teeth Whitening</li>
+                    <li>Porcelain Veneers</li>
+                </ul>
+            </div>
+        </button>
+        <button class="service-dropdown">
+            <div class="service-dropdown-top">
+                <img alt="screw" src="images/Impants.png">
+                <p>Implants</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                <strong>What is it?</strong>
+                <p>Dental implants are widely regarded as the gold standard for replacing missing teeth. Unlike traditional dentures or bridges, implants are a permanent solution that look, feel, and function just like natural teeth. A small titanium post is placed into the jawbone, acting as an artificial root that fuses with the bone over time to provide a stable and long-lasting foundation for a replacement tooth.</p>
+                <strong>What we do</strong>
+                <ul>
+                    <li>Single Tooth Replacement</li>
+                    <li>Multi-teeth Replacement</li>
+                    <li>Full Arch Replacement</li>
+                </ul>
+            </div>
+        </button>
+        <button class="service-dropdown">
+            <div class="service-dropdown-top">
+                <img alt="braces" src="images/Ortho.png">
+                <p>Orthodontics</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                <strong>What is it?</strong>
+                <p>Orthodontics is the branch of dentistry dedicated to correcting misaligned teeth and jaws, helping patients achieve a straighter, healthier smile. Beyond aesthetics, properly aligned teeth are easier to clean, reducing the risk of decay and gum disease over time. Whether you're a child, teenager, or adult, we offer a range of modern orthodontic solutions to suit your lifestyle and goals.</p>
+                <strong>What we do</strong>
+                <ul>
+                    <li>Braces</li>
+                    <li>Invisalign</li>
+                    <li>Clear Braces</li>
+                </ul>
+            </div>
+        </button>
     </div>
     <div id="FAQs">
         <h1>FAQs</h1>
-        <div class="service-dropdown FAQs">
-            <p>Are you taking new patients, and can you treat my whole family?</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown FAQs">
-            <p>Are you taking new patients, and can you treat my whole family?</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown FAQs">
-            <p>Can I bring my whole family?</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown FAQs">
-            <p>Why do I need x-rays if my teeth feel fine?</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown FAQs">
-            <p>What is Invisalign?</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown FAQs">
-            <p>What is a 'deep cleaning' or 'root planing'?</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
-        <div class="service-dropdown FAQs">
-            <p>What insurance and payment options do you accept?</p>
-            <img alt="dropdown" src="images/dropdown.png">
-        </div>
+        <button class="service-dropdown FAQs">
+            <div class="service-dropdown-top">
+                <p>Are you taking new patients, and can you treat my whole family?</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                Yes, Dr. Cao is currently accepting new patients and can take care of your entire family, from a one-year-old's first dental visit to helping you keep your teeth in your golden years.
+            </div>
+        </button>
+        <button class="service-dropdown FAQs">
+            <div class="service-dropdown-top">
+                <p>What happens during my regular dental exams?</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                The American Dental Association recommends a checkup every six months. During your exam, your dentist will perform a head and neck exam, check your gums, teeth, tongue, and throat for early warning signs of potential problems, and clean your teeth. Afterward, you'll be informed about the health of your teeth and gums along with any additional recommendations.
+            </div>
+        </button>
+        <button class="service-dropdown FAQs">
+            <div class="service-dropdown-top">
+                <p>Why do I need x-rays if my teeth feel fine?</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                More than 90% of dental problems are painless, so x-rays give your dentist a clear picture of what's happening beneath the surface — catching issues long before you'd notice them yourself.
+            </div>
+        </button>
+        <button class="service-dropdown FAQs">
+            <div class="service-dropdown-top">
+                <p>What is Invisalign?</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                Invisalign is a clear, virtually invisible alternative to traditional braces. Made from a thin, medical-grade polymer, the aligners gradually straighten your teeth without the need for metal brackets or wires.
+            </div>
+        </button>
+        <button class="service-dropdown FAQs">
+            <div class="service-dropdown-top">
+                <p>What is a 'deep cleaning' or 'root planing'?</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                This procedure removes stubborn tartar and plaque buildup below the gumline that regular brushing and flossing can't reach. It's typically the first line of treatment for patients diagnosed with periodontal disease, performed under local anesthetic during a two-hour appointment.
+            </div>
+        </button>
+        <button class="service-dropdown FAQs">
+            <div class="service-dropdown-top">
+                <p>What insurance and payment options do you accept?</p>
+                <img alt="dropdown" src="images/dropdown.png">
+            </div>
+            <div class="closed">
+                <p>We accept most major dental insurance plans, including Aetna, Anthem Blue Cross, Blue Shield, Cigna, Delta Dental, MetLife, and UnitedHealthcare, among others — if your provider isn't listed, just give us a call. We also accept cash, check, Visa, and MasterCard.</p>
+            </div>
+        </button>
     </div>
     <div id="contact">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3165.3150414576235!2d-121.97670412446213!3d37.50048712791336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc76b8a4e34c1%3A0x3a0be3b284b5dc95!2sLC%20Dental!5e0!3m2!1sen!2sus!4v1782165676995!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <div id="location">
-            <p><strong>Location</strong></p>
-            <p></br>43713 Boscell Road</p>
+            <p class="location-titles"><strong>Location</strong></p>
+            <p class="location-info"></br>43713 Boscell Road</p>
 
-            <p><strong>Phone</strong></p>
-            <p></br>(510) 770-8688</p>  
+            <p class="location-titles"><strong>Phone</strong></p>
+            <p class="location-info"></br>(510) 770-8688</p>  
 
-            <p><strong>Hours</strong></p>
+            <p class="location-titles"><strong>Hours</strong></p>
             <div id="hours">
                 <div>
                     <p>Monday</p>

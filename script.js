@@ -12,3 +12,11 @@ menuBtn.addEventListener("click", function(){
 closedBtn.addEventListener("click", function(){
     sidebar.classList.remove("open");
 });
+
+document.querySelectorAll(".service-dropdown").forEach(button => {
+    button.addEventListener("click", function(){
+        const body = this.querySelector(".closed, .open")
+        body.classList.toggle("open");
+        body.classList.toggle("closed");
+    })
+})
