@@ -44,7 +44,7 @@ h1{
 
 #logo{
     height: 100%;
-    width: 120px;
+    width: 150px;
 }
 
 #dropdown{
@@ -134,10 +134,10 @@ main div ul{
 }
 
 main div h2{
-    font-size: 40px;
+    font-size: 30px;
     background-color: rgb(255, 205, 85);
     border-radius: 25px;
-    padding: 30px;
+    padding: 20px;
     cursor: pointer;
     text-align: center;
 }
@@ -213,11 +213,12 @@ button{
     background-color: white;
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
     padding-left: 20px;
     padding-right: 20px;
 }
+
 
 .service-dropdown img{
     width: 40px;
@@ -264,44 +265,47 @@ button{
     overflow: hidden;
     transition: max-height 0.4s ease;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 .open{
-    max-height: 500px;
+    max-height: 800px;
     overflow: hidden;
     transition: max-height 0.4s ease;
     margin-top: 20px;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #hours div{
     text-align: left;
 }
 
-@media screen and (min-width: 600px){
+.service-dropdown-top img:last-child {
+    transition: transform 0.3s ease;
+}
+
+.open-arrow {
+    transform: rotate(180deg);
+}
+
+
+/* tablet styles */
+@media screen and (min-width: 780px){
     #body-content{
-        margin: 30px;
+        margin: 20px;
     }
     p{
-        font-size: 20px;
-    }
-    h1{
-        font-size: 80px;
+        font-size: 16px;
     }
     #dropdown{
         display: none;
     }
-    #logo{
-        height: auto;
-        width: 300px;
-    }
     #topbar{
         display: flex;
-        gap: 70px;
+        gap: 30px;
         align-items: center;
     }
     #topbar a{
-        font-size: 25px;
+        font-size: 14px;
         text-decoration: none;
         color: black;
         cursor: pointer;
@@ -332,21 +336,21 @@ button{
     }
     #main-left{
         max-width: 600px;
-        display: flex;
-        flex-direction: column;
     }
     #main-left h1{
-        font-size: 80px;
+        font-size: 30px;
         text-align: left;
-    }
-    #main-left h2{
-        max-width: 250px;
     }
     #main-left a{
         width: fit-content;
     }
     #main-left p{
+        font-size: 14px;
+    }
+    main div h2{
         font-size: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
     }
     .profile.desktop-only{
         height: auto;
@@ -357,28 +361,33 @@ button{
     #why-choose{
         display: flex;
         align-items: flex-start;
-        margin-top: 200px;
-        min-width: 1000px;
+        margin-top: 100px;
+        min-width: 100%;
     }
     #why-choose div{
-        flex: 2;
-        margin: 200px;
+        flex: 1;
         margin-top: 0;
+        padding-right: 20px;
     }
     #why-choose div p{
         margin-left: 0;
-        font-size: 20px;
+        font-size: 14px;
     }
     #why-choose h1{
         text-align: left;
+        margin-top: 0;
+    }
+
+    #about{
+        width: 500px;
     }
 
     #services{
         max-width: 100%;
         padding-top: 20px;
         padding-bottom: 50px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     #services-inner{
         display: grid;
@@ -390,7 +399,7 @@ button{
         grid-column: 1 / -1;
     }
     .service-dropdown img{
-        width: 50px;
+        width: 35px;
         height: 100%;
     }
 
@@ -398,15 +407,15 @@ button{
         max-width: 100%;
         padding-top: 20px;
         padding-bottom: 50px;
-        padding-left: 100px;
-        padding-right: 100px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     #FAQs-inner{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 10px;
         align-items: start;
-        }
+    }
     #FAQs-inner h1{
         grid-column: 1 / -1;
     }
@@ -429,5 +438,72 @@ button{
         height: 600px;
     }
 }
+
+/* desktop styles */
+@media screen and (min-width: 1024px){
+    #body-content{
+        margin: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 80px;
+    }
+    #logo{
+        width: 200px;
+    }
+    #topbar{
+        gap: 50px;
+    }
+    #topbar a{
+        font-size: 20px;
+    }
+    #main-left h1{
+        font-size: 60px;
+    }
+    #main-left h2{
+        font-size: 40px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    #main-left p{
+        font-size: 20px;
+    }
+
+    #why-choose{
+        margin-top: 200px;
+        gap: 20px;
+    }
+    #why-choose div{
+        flex: 2;
+        margin-top: 0;
+    }
+    #why-choose div p{
+        font-size: 20px;
+    }
+    #about{
+        width: 500px;
+        height: auto;
+    }
+
+    #services{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .service-dropdown img{
+        width: 50px;
+    }
+
+    #FAQs{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .open, .closed{
+        font-size: 20px;
+    }
+}
+
 
 

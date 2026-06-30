@@ -16,7 +16,10 @@ closedBtn.addEventListener("click", function(){
 document.querySelectorAll(".service-dropdown").forEach(button => {
     button.addEventListener("click", function(){
         const body = this.querySelector(".closed, .open")
+        const arrow = this.querySelector('.service-dropdown-top img:last-child');
+
         body.classList.toggle("open");
         body.classList.toggle("closed");
+        arrow.classList.toggle("open-arrow");
     })
 })
