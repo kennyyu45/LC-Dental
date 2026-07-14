@@ -23,3 +23,5 @@ document.querySelectorAll(".service-dropdown").forEach(button => {
         arrow.classList.toggle("open-arrow");
     })
 })
+
+
