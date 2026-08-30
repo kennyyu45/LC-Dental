@@ -226,6 +226,29 @@ button{
     height: 100%;
 }
 
+#meet-doctors{
+    background-color: #D3FBB0;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#meet-doctors h1{
+    margin-top: 0;
+}
+
+#meet-doctors p{
+    color: green;
+    font-size: 30px;
+    margin-bottom: 100px;
+}
+
+.doctor-img{
+    width: 250px;;
+}
+
 .FAQs{
     border: 1.5px solid black;
     padding: 15px;
@@ -236,14 +259,12 @@ button{
     padding-right: 5px;
 }
 
-
 #location{
     font-size: 16px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 #hours{
@@ -257,7 +278,6 @@ button{
 .location-info{
     margin-bottom: 30px;
     margin-top: 0;
-    
 }
 
 /* logic for opening dropdowns */
@@ -278,6 +298,7 @@ button{
 
 #hours div{
     text-align: left;
+    margin-left: 45px;
 }
 
 .service-dropdown-top img:last-child {
@@ -407,7 +428,22 @@ button{
         width: 35px;
         height: 100%;
     }
-
+     #meet-doctors div{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    #meet-doctors div div{
+        display: flex;
+        flex-direction: column;
+    }
+    #services{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .doctor-img{
+        width: 200px;
+    }
     #FAQs{
         max-width: 100%;
         padding-top: 20px;
@@ -496,10 +532,8 @@ button{
         height: auto;
         min-width: 0;
     }
-
-    #services{
-        padding-left: 20px;
-        padding-right: 20px;
+    .doctor-img{
+        width: 400px;
     }
     .service-dropdown img{
         width: 50px;
